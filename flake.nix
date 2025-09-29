@@ -45,7 +45,7 @@
             mkdir -p $TEMPDIR/.texcache/texmf-var
             env TEXMFHOME="$TEMPDIR/.texcache" \
               TEXMFVAR="$TEMPDIR/.texcache/texmf-var" \
-              OSFONTDIR=${pkgs.ibm-plex}/share/fonts \
+              OSFONTDIR=${pkgs.pretendard}/share/fonts \
               latexmk -interaction=nonstopmode -pdf -lualatex \
               main.tex
           '';
